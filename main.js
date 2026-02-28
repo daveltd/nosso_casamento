@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 lucide.createIcons();
             }, 3000);
         } catch (err) {
-            console.error('Failed to copy: ', err);
+            // Silently ignore
         }
     });
 
