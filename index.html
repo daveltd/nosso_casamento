@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Site de casamento de Naiara e Davide - Confirme sua presença, veja nossa galeria e lista de presentes.">
+    <title>Naiara & Davide | Nosso Casamento</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo">N <span>&</span> D</a>
+        <div class="nav-links">
+            <a href="#detalhes">Detalhes</a>
+            <a href="https://web.dotstheapp.com/a?group=2384752&dlBy=naiaraw105&code=7ETdI4nSLAEJ&utm_source=guest&utm_medium=share&utm_campaign=guest_event_album"
+                target="_blank">Galeria</a>
+            <a href="#presentes">Presentes</a>
+            <a href="#rsvp" class="btn-primary-outline">RSVP</a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Abrir Menu">
+            <i data-lucide="menu"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-menu-btn" aria-label="Fechar Menu">
+            <i data-lucide="x"></i>
+        </button>
+        <a href="#detalhes">Detalhes</a>
+        <a href="https://web.dotstheapp.com/a?group=2384752&dlBy=naiaraw105&code=7ETdI4nSLAEJ&utm_source=guest&utm_medium=share&utm_campaign=guest_event_album"
+            target="_blank">Galeria</a>
+        <a href="#presentes">Presentes</a>
+        <a href="#rsvp">RSVP</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <p class="hero-subtitle">Vamos casar!</p>
+            <h1 class="hero-title">Naiara <span>&</span> Davide</h1>
+            <div class="hero-details">
+                <p><i data-lucide="calendar"></i> 30 de Maio de 2026</p>
+                <p><i data-lucide="map-pin"></i> Chacara Shalon, Varzea Paulista</p>
+            </div>
+            <div class="countdown-container" id="countdown">
+                <div class="time-box"><span id="days">00</span>
+                    <p>Dias</p>
+                </div>
+                <div class="time-box"><span id="hours">00</span>
+                    <p>Horas</p>
+                </div>
+                <div class="time-box"><span id="minutes">00</span>
+                    <p>Min</p>
+                </div>
+                <div class="time-box"><span id="seconds">00</span>
+                    <p>Seg</p>
+                </div>
+            </div>
+            <a href="#rsvp" class="btn-primary">Confirmar Presença</a>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#detalhes"><i data-lucide="chevron-down"></i></a>
+        </div>
+    </section>
+
+
+    <!-- Detalhes Section -->
+    <section class="detalhes section-padding" id="detalhes">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Detalhes</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="detalhes-grid reveal">
+                <div class="detalhes-card">
+                    <i data-lucide="bell" class="detalhes-icon"></i>
+                    <h3>Cerimônia</h3>
+                    <p class="detalhes-location">Chácara Shalon</p>
+                    <p class="detalhes-time">17:30 em ponto</p>
+                </div>
+                <div class="detalhes-card">
+                    <i data-lucide="glass-water" class="detalhes-icon"></i>
+                    <h3>Recepção</h3>
+                    <p class="detalhes-location">Chácara Shalon</p>
+                    <p class="detalhes-time">18:00h</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <!-- Gallery moved to external link -->
+
+    <!-- Presentes e Pix -->
+    <section class="presentes section-padding bg-sage-light" id="presentes">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Lista de Presentes</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="presentes-content reveal">
+                <div class="presentes-intro">
+                    <p>A sua presença é o nosso maior e melhor presente.</p>
+                    <p>Nossa casa já está pronta e nossas malas voltarão cheias de amor e boas lembranças.</p>
+                    <p>Se ainda assim você gostaria de nos presentear, nossos passaportes estão ansiosos!</p>
+                    <p>Que tal nos ajudar a colecionar memórias juntos?</p>
+                </div>
+
+                <div class="pix-card">
+                    <div class="pix-header">
+                        <i data-lucide="heart" class="heart-icon"></i>
+                        <h3>Presente via Pix</h3>
+                    </div>
+                    <div class="pix-body">
+                        <p class="pix-key-label">Chave E-mail:</p>
+                        <p class="pix-key-value" id="pixKey">naiaraw105@gmail.com</p>
+                        <button class="btn-copy" id="btnCopyPix" aria-label="Copiar Chave Pix">
+                            <i data-lucide="copy"></i>
+                            <span class="btn-text">Copiar Chave Pix</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="rsvp section-padding" id="rsvp">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Confirme sua Presença</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="rsvp-container reveal">
+                <p class="rsvp-deadline">Por favor, confirme sua presença até o dia <strong>10 de Abril de
+                        2026</strong>.</p>
+                <form id="rsvpForm" class="rsvp-form">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="criancas_0_7">Crianças de 0 a 7 anos</label>
+                        <input type="number" id="criancas_0_7" name="criancas_0_7" min="0" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="criancas_8_12">Crianças de 8 a 12 anos</label>
+                        <input type="number" id="criancas_8_12" name="criancas_8_12" min="0" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="convidados">Vai levar acompanhante(s)? Se sim, quantos?</label>
+                        <select id="convidados" name="convidados">
+                            <option value="0">Nenhum (Vou sozinho/a)</option>
+                            <option value="1">1 Acompanhante</option>
+                            <option value="2">2 Acompanhantes</option>
+                            <option value="3">3 Acompanhantes</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="nome_acompanhantes">Nome do(s) Acompanhante(s) (Opcional)</label>
+                        <input type="text" id="nome_acompanhantes" name="nome_acompanhantes"
+                            placeholder="Ex: Maria Clara, João Pedro">
+                    </div>
+                    <div class="form-group">
+                        <label for="restricoes_alimentares">Restrição Alimentar (Opcional, deixe em branco se não
+                            houver)</label>
+                        <input type="text" id="restricoes_alimentares" name="restricoes_alimentares"
+                            placeholder="Ex: Alergia a amendoim, intolerância à lactose, vegetariano, etc.">
+                    </div>
+                    <div class="form-group">
+                        <label>Você comparecerá ao evento?</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="presenca" value="sim" checked>
+                                <span>Sim, com certeza!</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="presenca" value="nao">
+                                <span>Infelizmente não poderei ir.</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary w-100" id="btnSubmitForm">
+                        Enviar Confirmação <i data-lucide="send"></i>
+                    </button>
+                    <p class="form-success-msg hidden" id="formSuccess">Sua resposta foi enviada com sucesso! Muito
+                        obrigado.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Feito com amor</p>
+            <h3>N <span>&</span> D</h3>
+            <p class="footer-date">30.05.2026</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js?v=2"></script>
+</body>
+
+</html>
