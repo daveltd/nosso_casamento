@@ -79,7 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 3000);
         } catch (err) {
             console.error('Failed to copy: ', err);
-            alert('Não foi possível copiar a chave Pix. Por favor, tente selecionar e copiar manualmente.');
         }
     });
 
