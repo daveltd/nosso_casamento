@@ -368,12 +368,6 @@ button[type="submit"] {
     z-index: 2;
     max-width: 800px;
     padding: 2rem;
-    /* Glassmorphism effect - Extremely transparent to see the map */
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    border: 1px solid rgba(203, 122, 89, 0.1);
-    border-radius: var(--radius-lg);
 }
 
 .hero-subtitle {
