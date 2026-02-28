@@ -489,8 +489,8 @@ button[type="submit"] {
 @media (max-width: 768px) {
     .hero {
         background-position: center;
-        background-size: cover;
-        /* Change to cover for mobile to feel more immersive */
+        background-size: contain;
+        /* Ensure map fits entirely on mobile without cropping */
     }
 
     .hero-details {
